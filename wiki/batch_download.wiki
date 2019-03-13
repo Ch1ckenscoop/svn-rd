@@ -2,7 +2,7 @@
 
 ====Ch1ckenscoop Reactivedrop Server Download====
 
-<a href=https://github.com/ch1ckenscoop/Project><img src=https://github.com/ch1ckenscoop/svn-rd/blob/master/wiki/asw_reactivedrop_logo2.jpg /></a>
+<a href=https://github.com/Ch1ckenscoop/Project/blob/master/READRD.md><img src=https://github.com/ch1ckenscoop/svn-rd/blob/master/wiki/asw_reactivedrop_logo2.jpg /></a>
 
 It is highly recommended that you use the [[https://github.com/ch1ckenscoop/svn-rd/blob/master/wiki/InstallServer.wiki|InstallServer]] procedure to get the most updated server, also you can just click [https://steamcommunity.com/linkfilter/?url=https://1drv.ms/u/s!Ah5fgrDb7TZ7g2grUPjrN0_5ezby AlienSwarmRDServer] batch for easy downloading.
 

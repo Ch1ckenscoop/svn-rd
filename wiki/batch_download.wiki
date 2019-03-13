@@ -1,0 +1,18 @@
+<a href=https://github.com/Ch1ckenscoop/Project/blob/master/READRD.md><img align=right src=https://github.com/Ch1ckenscoop/svn/blob/master/wiki/googlecode-home.png /></a>
+
+====Ch1ckenscoop Reactivedrop Server Download====
+
+<a href=https://github.com/ch1ckenscoop/Project><img src=https://github.com/ch1ckenscoop/svn-rd/blob/master/wiki/asw_reactivedrop_logo2.jpg /></a>
+
+It is highly recommended that you use the [[https://github.com/ch1ckenscoop/svn-rd/blob/master/wiki/InstallServer.wiki|InstallServer]] procedure to get the most updated server, also you can just click [https://steamcommunity.com/linkfilter/?url=https://1drv.ms/u/s!Ah5fgrDb7TZ7g2grUPjrN0_5ezby AlienSwarmRDServer] batch for easy downloading.
+
+After you've unzipped the [https://steamcommunity.com/linkfilter/?url=https://1drv.ms/u/s!Ah5fgrDb7TZ7g2grUPjrN0_5ezby AlienSwarmRDServer] and can now run it by double-clicking the "Start Server" batch file in your AlienSwarmRDServer folder. 
+
+
+It is highly recommended that you do not change the settings in the files "server.cfg" and "hordemode.cfg".
+
+It is instead recommended that you create your own files "customsettings.cfg" and "customhordemode.cfg" where you can place any settings you like. These files are automatically exec'd after the server.cfg, so any settings you place in these files will not be overwritten by server update.
+
+Click "AlienSwarmRDServer/swarm/cfg/[[https://github.com/ch1ckenscoop/svn-rd/blob/master/server/reactivedrop/cfg/customsettings_example.cfg|customsettings_example.cfg]]" to see more server settings and instructions. 
+
+

@@ -1,0 +1,18 @@
+======Sets player experience checking of the autokick.======
+= Description =
+
+Sets player experience checking. See also [[asw_autokick_player_promotion.wiki|asw_autokick_player_promotion]]. Requires enabling [[asw_autokick_player.wiki|asw_autokick_player]] to work.
+
+For examples:
+
+#server autokick player experience level less than 5, sets [[asw_autokick_player_experience.wiki|asw_autokick_player_experience]] to 5.
+#server autokick player experience level less than 10, sets [[asw_autokick_player_experience.wiki|asw_autokick_player_experience]] to 10.
+
+Note: experience level checking in between 1st to 27th.
+
+{|
+|| [[asw_version.wiki | Server Version]] Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| 2.0 || `5` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+

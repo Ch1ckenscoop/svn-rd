@@ -1,0 +1,10 @@
+======Sets leap damage of the poisonzombie's headcrab.======
+= Description =
+
+Controls leap/melee damage to marine.
+
+{|
+|| [[asw_version.wiki|Server Version]] Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| 1.3.9 || `25` || [[FCVAR_NONE.wiki|FCVAR_NONE]] || [Float] 
+|}

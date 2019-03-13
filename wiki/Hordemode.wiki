@@ -1,0 +1,999 @@
+<a href=https://github.com/Ch1ckenscoop/Project/blob/master/READRD.md><img align=right src=googlecode-home.png /></a>
+======Hordemode cvars and descriptions.======
+To avoid spamming the wiki with tons of asw_hordemode cvars, I've decided to aggregate them all onto this page.
+
+= Core Hordemode Cvars =
+
+====== asw_hordemode ======
+
+Enables/disables hordemode.
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `0` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Bool] 
+|}
+
+====== asw_hordemode_debug ======
+
+Shows debug messages for hordemode. Set to 2 for more verbose messages.
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `0` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_update_mode ======
+
+If non-zero, update this often. If zero, update only after each horde has finished spawning.
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `0` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_mode ======
+
+Set to 0 to randomize alien healths only. Set to 1 to randomize spawned aliens and healths (binary setting + max horde size settings + health cvars). Set to 2 to randomize spawned aliens only (binary setting + max horde size settings), while not changing alien healths.
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_aliens ======
+
+Binary flags of aliens to spawn. Note: will not spawn aliens set in this cvar if their max spawn is 0.
+
+Flags are as follows:
+
+  * Drone: 1
+  * Buzzer: 2
+  * Parasite: 4
+  * Shieldbug: 8
+  * Drone Jumper: 16
+  * Harvester: 32
+  * Defanged parasite: 64
+  * Queen: 128
+  * Boomer: 256
+  * Ranger: 512
+  * Mortar: 1024
+  * Shaman: 2048
+  * Uber Drone: 4096
+  * Beta Drone: 8192
+  * Beta Shieldbug: 16384
+  * Beta Harvester: 32768
+  * Beta Buzzer: 65536
+  * Beta Parasite: 131072
+  * Beta Mortar: 262144
+  * NPC Antlionguard: 524288
+  * NPC Antlion: 1048576
+  * NPC ZOMBIE: 2097152
+  * NPC FASTZOMBIE: 4194304
+  * NPC POISONZOMBIE: 8388608
+  
+All aliens would be `16777215`. So if you wanted to spawn all types of drones and rangers, the equation would be this:
+
+`1 + 16 + 4096 + 512 = 4625`
+
+{|
+|| [[asw_version.wiki|Server Version]] Added || Default || [[CvarFlags.wiki|CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| 1.3.8 || `16777215` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+= Alien Health Cvars =
+
+All cvars in this category do the same thing: Set the minimum or maximum health for an alien. The health for the alien is a random number between these two cvars.
+
+== Drones ==
+
+====== asw_hordemode_drone_health_max ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `50` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_drone_health_min ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `25` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+----
+
+== Uber Drones ==
+
+====== asw_hordemode_drone_uber_health_max ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `350` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_drone_uber_health_min ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `275` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+----
+
+== Drone Jumpers ==
+
+====== asw_hordemode_drone_jumper_health_max ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `45` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_drone_jumper_health_min ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `30` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+----
+
+== Beta Drones ==
+
+====== asw_hordemode_drone_beta_health_max ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `50` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_drone_beta_health_min ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `25` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+----
+
+== Buzzers ==
+
+====== asw_hordemode_buzzer_health_max ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `35` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_buzzer_health_min ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `10` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+----
+
+== Beta Buzzers ==
+
+====== asw_hordemode_buzzer_beta_health_max ======
+
+{|
+|| [[asw_version.wiki|Server Version]] Added || Default || [[CvarFlags.wiki|CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| 2.0 || `120` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_buzzer_beta_health_min ======
+
+{|
+|| [[asw_version.wiki|Server Version]] Added || Default || [[CvarFlags.wiki|CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| 2.0 || `60` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+----
+
+== Parasites ==
+
+====== asw_hordemode_parasite_health_max ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `35` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_parasite_health_min ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `20` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+----
+
+== Beta Parasites ==
+
+====== asw_hordemode_parasite_beta_health_max ======
+
+{|
+|| [[asw_version.wiki|Server Version]] Added || Default || [[CvarFlags.wiki|CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| 2.0 || `35` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_parasite_beta_health_min ======
+
+{|
+|| [[asw_version.wiki|Server Version]] Added || Default || [[CvarFlags.wiki|CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| 2.0 || `20` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+----
+
+== Defanged Parasites ==
+
+====== asw_hordemode_parasite_safe_health_max ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `20` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_parasite_safe_health_min ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `10` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+----
+
+== Shieldbugs == 
+
+====== asw_hordemode_shieldbug_health_max ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `1500` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_shieldbug_health_min ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `750` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+----
+
+== Beta Shieldbugs ==
+
+====== asw_hordemode_shieldbug_beta_health_max ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `1500` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_shieldbug_beta_health_min ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `750` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+----
+
+== Harvesters ==
+
+====== asw_hordemode_harvester_health_max ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `325` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_harvester_health_min ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `150` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+----
+
+== Beta Harvesters ==
+
+====== asw_hordemode_harvester_beta_health_max ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `325` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_harvester_beta_health_min ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `150` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+----
+
+== Queens ==
+
+====== asw_hordemode_queen_health_max ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `2500` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_queen_health_min ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `1000` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+----
+
+== Boomers ==
+
+====== asw_hordemode_boomer_health_max ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `900` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_boomer_health_min ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `750` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+----
+
+== Rangers ==
+
+====== asw_hordemode_ranger_health_max ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `125` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_ranger_health_min ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `75` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+----
+
+== Mortars ==
+
+====== asw_hordemode_mortar_health_max ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `425` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_mortar_health_min ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `300` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+----
+
+== Beta Mortars ==
+
+====== asw_hordemode_mortar_beta_health_max ======
+{|
+|| [[asw_version.wiki|Server Version]] Added || Default || [[CvarFlags.wiki|CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| 2.0 || `425` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_mortar_beta_health_min ======
+
+{|
+|| [[asw_version.wiki|Server Version]] Added || Default || [[CvarFlags.wiki|CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| 2.0 || `300` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+----
+
+== Shaman ==
+
+====== asw_hordemode_shaman_health_max ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `80` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_shaman_health_min ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `45` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+== NPC Antlionguard ==
+
+====== asw_hordemode_antlionguard_health_max ======
+
+{|
+|| [[asw_version.wiki|Server Version]] Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| 1.3.8 || `1000` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_antlionguard_health_min ======
+
+{|
+|| [[asw_version.wiki|Server Version]] Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| 1.3.8 || `750` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+== NPC Antlion ==
+
+====== asw_hordemode_antlion_health_max ======
+
+{|
+|| [[asw_version.wiki|Server Version]] Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| 1.3.8 || `1000` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_antlion_health_min ======
+
+{|
+|| [[asw_version.wiki|Server Version]] Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| 1.3.8 || `750` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+== NPC Zombie ==
+
+====== asw_hordemode_zombie_health_max ======
+
+{|
+|| [[asw_version.wiki|Server Version]] Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| 1.3.8 || `100` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_zombie_health_min ======
+
+{|
+|| [[asw_version.wiki|Server Version]] Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| 1.3.8 || `50` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+== NPC Fastzombie ==
+
+====== asw_hordemode_fastzombie_health_max ======
+
+{|
+|| [[asw_version.wiki|Server Version]] Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| 1.3.8 || `100` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_fastzombie_health_min ======
+
+{|
+|| [[asw_version.wiki|Server Version]] Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| 1.3.8 || `50` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+== NPC Poisonzombie ==
+
+====== asw_hordemode_poisonzombie_health_max ======
+
+{|
+|| [[asw_version.wiki|Server Version]] Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| 1.3.8 || `100` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_poisonzombie_health_min ======
+
+{|
+|| [[asw_version.wiki|Server Version]] Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| 1.3.8 || `50` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+
+= Alien Maximums/Minimums =
+
+All cvars in this category do the same thing: Set the minimum or maximum number of an alien to spawn. The number to spawn is chosen as a random number between these two cvars.
+
+== Drones ==
+
+====== asw_hordemode_drone_max ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_drone_min ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+----
+
+== Uber Drones ==
+
+====== asw_hordemode_drone_uber_max ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_drone_uber_min ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+----
+
+== Drone Jumpers ==
+
+====== asw_hordemode_drone_jumper_max ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_drone_jumper_min ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+----
+
+== Beta Drones ==
+
+====== asw_hordemode_drone_beta_max ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_drone_beta_min ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+----
+
+== Buzzers ==
+
+====== asw_hordemode_buzzer_max ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_buzzer_min ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+----
+
+== Beta Buzzers ==
+
+====== asw_hordemode_buzzer_beta_max ======
+
+{|
+|| [[asw_version.wiki|Server Version]] Added || Default || [[CvarFlags.wiki|CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| 2.0 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_buzzer_beta_min ======
+
+{|
+|| [[asw_version.wiki|Server Version]] Added || Default || [[CvarFlags.wiki|CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| 2.0 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+----
+
+== Parasites ==
+
+====== asw_hordemode_parasite_max ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_parasite_min ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+----
+
+== Beta Parasites ==
+
+====== asw_hordemode_parasite_beta_max ======
+
+{|
+|| [[asw_version.wiki|Server Version]] Added || Default || [[CvarFlags.wiki|CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| 2.0 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_parasite_beta_min ======
+
+{|
+|| [[asw_version.wiki|Server Version]] Added || Default || [[CvarFlags.wiki|CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| 2.0 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+----
+
+== Defanged Parasites ==
+
+====== asw_hordemode_parasite_safe_max ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_parasite_safe_min ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+----
+
+== Shieldbugs == 
+
+====== asw_hordemode_shieldbug_max ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_shieldbug_min ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+----
+
+== Beta Shieldbugs ==
+
+====== asw_hordemode_shieldbug_beta_max ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `0` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_shieldbug_beta_min ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `0` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+----
+
+== Harvesters ==
+
+====== asw_hordemode_harvester_max ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_harvester_min ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+----
+
+== Beta Harvesters ==
+
+====== asw_hordemode_harvester_beta_max ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_harvester_beta_min ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+----
+
+== Queens ==
+
+====== asw_hordemode_queen_max ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `0` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_queen_min ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `0` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+----
+
+== Boomers ==
+
+====== asw_hordemode_boomer_max ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_boomer_min ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+----
+
+== Rangers ==
+
+====== asw_hordemode_ranger_max ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_ranger_min ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+----
+
+== Mortars ==
+
+====== asw_hordemode_mortar_max ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_mortar_min ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+----
+
+== Beta Mortars ==
+
+====== asw_hordemode_mortar_beta_max ======
+
+{|
+|| [[asw_version.wiki|Server Version]] Added || Default || [[CvarFlags.wiki|CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| 2.0 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_mortar_beta_min ======
+
+{|
+|| [[asw_version.wiki|Server Version]] Added || Default || [[CvarFlags.wiki|CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| 2.0 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+----
+
+== Shaman ==
+
+====== asw_hordemode_shaman_max ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_shaman_min ======
+
+{|
+|| Revision Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| r326 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+----
+
+== NPC Antlionguard ==
+
+====== asw_hordemode_antlionguard_max ======
+
+{|
+|| [[asw_version.wiki|Server Version]] Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| 1.3.8 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_antlionguard_min ======
+
+{|
+|| [[asw_version.wiki|Server Version]] Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| 1.3.8 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+----
+
+== NPC Antlion ==
+
+====== asw_hordemode_antlion_max ======
+
+{|
+|| [[asw_version.wiki|Server Version]] Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| 1.3.8 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_antlion_min ======
+
+{|
+|| [[asw_version.wiki|Server Version]] Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| 1.3.8 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+----
+
+== NPC Zombie ==
+
+====== asw_hordemode_zombie_max ======
+
+{|
+|| [[asw_version.wiki|Server Version]] Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| 1.3.8 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_zombie_min ======
+
+{|
+|| [[asw_version.wiki|Server Version]] Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| 1.3.8 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+----
+
+== NPC Fastzombie ==
+
+====== asw_hordemode_fastzombie_max ======
+
+{|
+|| [[asw_version.wiki|Server Version]] Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| 1.3.8 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_fastzombie_min ======
+
+{|
+|| [[asw_version.wiki|Server Version]] Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| 1.3.8 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+----
+
+== NPC Poisonzombie ==
+
+====== asw_hordemode_poisonzombie_max ======
+
+{|
+|| [[asw_version.wiki|Server Version]] Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| 1.3.8 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}
+
+====== asw_hordemode_poisonzombie_min ======
+
+{|
+|| [[asw_version.wiki|Server Version]] Added || Default || [[CvarFlags.wiki | CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| 1.3.8 || `1` || [[FCVAR_CHEAT.wiki|FCVAR_CHEAT]] || [Int] 
+|}

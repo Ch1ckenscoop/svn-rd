@@ -1,0 +1,43 @@
+===Sets marine color.===
+
+= Description =
+
+Sets marines with 3 different colors and percentage of the marines you want to give these colors.
+==Sets the color of normal marines.== 
+======asw_marine_color====== 
+{|
+|| [[asw_version.wiki|Server Version]] Added || Default || [[CvarFlags.wiki|CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| 1.3.9 || `255 255 255` || [[FCVAR_NONE.wiki|FCVAR_NONE]] || [Color255] 
+|}
+
+==Sets a second color for marines.==
+======asw_marine_color2======
+{|
+|| [[asw_version.wiki|Server Version]] Added || Default || [[CvarFlags.wiki|CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| 1.3.9 || `255 255 255` || [[FCVAR_NONE.wiki|FCVAR_NONE]] || [Color255] 
+|}
+======asw_marine_color2_percent======
+Sets the percentage of the marines want to give the second color, sets the value in between 0 - 1. 
+{|
+|| [[asw_version.wiki|Server Version]] Added || Default || [[CvarFlags.wiki|CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| 1.3.9 || `0` || [[FCVAR_NONE.wiki|FCVAR_NONE]] || [Float] 
+|}
+
+==Sets a third color for marines.==
+======asw_marine_color3======
+{|
+|| [[asw_version.wiki|Server Version]] Added || Default || [[CvarFlags.wiki|CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| 1.3.9 || `255 255 255` || [[FCVAR_NONE.wiki|FCVAR_NONE]] || [Color255] 
+|}
+
+======asw_marine_color3_percent======
+Sets the percentage of the marines want to give the third color, sets the value in between 0 - 1. 
+{|
+|| [[asw_version.wiki|Server Version]] Added || Default || [[CvarFlags.wiki|CvarFlags]] || [ParamType Parameter Type] 
+|-
+|| 1.3.9 || `0` || [[FCVAR_NONE.wiki|FCVAR_NONE]] || [Float] 
+|}

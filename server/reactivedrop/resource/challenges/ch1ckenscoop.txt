@@ -1,0 +1,6 @@
+"CHALLENGE"
+{
+	"name"	"Ch1ckensCoop Carnage Mode"
+	"description"	"Onslaught Carnage Mode: Heavy horde, unlimited ammo for most weapons, all kinds of alien/beta alien health/speed/horde are stronger/faster/heavy by changing difficulty levels, all weapons/ammo are enhanced by changing difficulty levels."
+}
+//all cvar settings is in customsettings.cfg, no external .txt or .nut files need on Ch1ckensCoop:

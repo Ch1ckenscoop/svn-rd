@@ -1,4 +1,4 @@
-<a href=https://github.com/Ch1ckenscoop/Project/blob/master/READRD.md><img align=right src=googlecode-home.png /></a>
+<a href=https://github.com/Ch1ckenscoop/Project-rd><img align=right src=googlecode-home.png /></a>
 ======Hordemode cvars and descriptions.======
 To avoid spamming the wiki with tons of asw_hordemode cvars, I've decided to aggregate them all onto this page.
 
@@ -50,30 +50,30 @@ Binary flags of aliens to spawn. Note: will not spawn aliens set in this cvar if
 
 Flags are as follows:
 
-  * Drone: 1
-  * Buzzer: 2
-  * Parasite: 4
-  * Shieldbug: 8
-  * Drone Jumper: 16
-  * Harvester: 32
-  * Defanged parasite: 64
-  * Queen: 128
-  * Boomer: 256
-  * Ranger: 512
-  * Mortar: 1024
-  * Shaman: 2048
-  * Uber Drone: 4096
-  * Beta Drone: 8192
-  * Beta Shieldbug: 16384
-  * Beta Harvester: 32768
-  * Beta Buzzer: 65536
-  * Beta Parasite: 131072
-  * Beta Mortar: 262144
-  * NPC Antlionguard: 524288
-  * NPC Antlion: 1048576
-  * NPC ZOMBIE: 2097152
-  * NPC FASTZOMBIE: 4194304
-  * NPC POISONZOMBIE: 8388608
+* Drone: 1
+* Buzzer: 2
+* Parasite: 4
+* Shieldbug: 8
+* Drone Jumper: 16
+* Harvester: 32
+* Defanged parasite: 64
+* Queen: 128
+* Boomer: 256
+* Ranger: 512
+* Mortar: 1024
+* Shaman: 2048
+* Uber Drone: 4096
+* Beta Drone: 8192
+* Beta Shieldbug: 16384
+* Beta Harvester: 32768
+* Beta Buzzer: 65536
+* Beta Parasite: 131072
+* Beta Mortar: 262144
+* NPC Antlionguard: 524288
+* NPC Antlion: 1048576
+* NPC ZOMBIE: 2097152
+* NPC FASTZOMBIE: 4194304
+* NPC POISONZOMBIE: 8388608
   
 All aliens would be `16777215`. So if you wanted to spawn all types of drones and rangers, the equation would be this:
 

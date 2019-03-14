@@ -1,12 +1,12 @@
 ======How to install the Ch1ckensCoop server.======
 
-<a href=https://github.com/Ch1ckenscoop/Project/blob/master/READRD.md><img align=right src=googlecode-home.png /></a>
+<a href=https://github.com/Ch1ckenscoop/Project-rd><img align=right src=googlecode-home.png /></a>
 
 ==== Installing Ch1ckensCoop on ReactiveDrop ====
 
 <a href=http://tortoisesvn.net/downloads.html><img align=left src=tsvn_logo.png /></a>
 
-<a href=https://github.com/Ch1ckenscoop/Project/blob/master/READRD.md><img align=center src=https://github.com/ch1ckenscoop/svn-rd/blob/master/wiki/asw_reactivedrop_logo2.jpg /></a>
+<a href=https://github.com/Ch1ckenscoop/Project-rd><img align=center src=https://github.com/ch1ckenscoop/svn-rd/blob/master/wiki/asw_reactivedrop_logo2.jpg /></a>
 
 You will need [http://tortoisesvn.net/downloads.html TortoiseSVN] and [http://media.steampowered.com/installer/steamcmd.zip SteamCMD] to download, TortoiseSVN install, unzip steamcmd.zip and update Ch1ckensCoop. Make sure that you install the version that is appropriate for your OS.
 

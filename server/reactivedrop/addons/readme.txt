@@ -2,7 +2,7 @@
 NOTE:
 =====
 
-Addon "sounds.vpk" is providing missed queen sounds and HL2 Aliens sounds, this addon must be in this 'addons' directory. 
+Addon "sounds.vpk" is providing missed queen sounds and HL2 Alien sounds, this addon must be in this 'addons' directory. 
 
 
 

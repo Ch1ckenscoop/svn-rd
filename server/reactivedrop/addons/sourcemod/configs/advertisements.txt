@@ -80,7 +80,7 @@
 	"12"
 	{
 		"type"		"S"
-		"text"		"type  /help  to get helpful chat commands."
+		"text"		"type  /helps  to get helpful chat commands."
 	}
 
 }

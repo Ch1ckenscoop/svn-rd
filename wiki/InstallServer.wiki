@@ -26,7 +26,7 @@ Double click steamcmd.exe in the unzipped folder, SteamCMD will automatically up
 
 Type the following commands at the Steam >prompt:
 
-  *	force_install_dir c:/AlienSwarmRDServer/
+  * force_install_dir c:/AlienSwarmRDServer/
   * login 'yoursteamuserid' 
   * Enter  yoursteampassword  when prompt for password. 
 

@@ -4,21 +4,21 @@
 
 ==== Installing Ch1ckensCoop on ReactiveDrop ====
 
-<a href=http://tortoisesvn.net/downloads.html><img align=left src=tsvn_logo.png /></a>
+<a href=http://tortoisegit.org/download><img align=left src=tsvn_logo.png /></a>
 
 <a href=https://github.com/Ch1ckenscoop/Project-rd><img align=center src=https://github.com/ch1ckenscoop/svn-rd/blob/master/wiki/asw_reactivedrop_logo2.jpg /></a>
 
-You will need [http://tortoisesvn.net/downloads.html TortoiseSVN] and [http://media.steampowered.com/installer/steamcmd.zip SteamCMD] to download, TortoiseSVN install, unzip steamcmd.zip and update Ch1ckensCoop. Make sure that you install the version that is appropriate for your OS.
+You will need [http://tortoisegit.org/download TortoiseGit] and [http://media.steampowered.com/installer/steamcmd.zip SteamCMD] to download, TortoiseGit install, unzip steamcmd.zip and update Ch1ckensCoop. Make sure that you install the version that is appropriate for your OS.
 
-After installing TortoiseSVN and rebooting your computer, create a folder (let's call it AlienSwarmRDServer) on a drive that has at least 3 GB of free space(for example: 'c:/AlienSwarmRDServer').
+After installing TortoiseGit and rebooting your computer, create a folder (let's call it AlienSwarmRDServer) on a drive that has at least 3 GB of free space(for example: 'c:/AlienSwarmRDServer').
 
-Right click on the AlienSwarmRDServer folder and select "SVN Checkout". 
+Right click on the folder and select "TortoiseGit > Clone". 
 
-<a href=https://github.com/ch1ckenscoop/svn-rd/blob/master/wiki/InstallServer.wiki ><img src=svn_checkout.PNG /></a>
+<a href=https://github.com/ch1ckenscoop/svn-rd/blob/master/wiki/InstallServer.wiki ><img src=git_clone.png /></a>
 
-Set the URL to [[InstallServer.wiki|http://github.com/ch1ckenscoop/svn-rd/trunk/server]] and click OK.
+Set the URL to [[InstallServer.wiki|http://github.com/ch1ckenscoop/server-rd.git]] and click OK.
 
-After the checkout is complete, click OK again.
+After the clone is 'Success', click Close.
 
 Make sure the unzipped steamcmd folder is stand-alone from AlienSwarmRDServer folder.
 
@@ -26,7 +26,7 @@ Double click steamcmd.exe in the unzipped folder, SteamCMD will automatically up
 
 Type the following commands at the Steam >prompt:
 
-  * force_install_dir c:/AlienSwarmRDServer/
+  * force_install_dir c:/AlienSwarmRDServer/server-rd
   * login 'yoursteamuserid' 
   * Enter  yoursteampassword  when prompt for password. 
 
@@ -43,13 +43,13 @@ Make sure downloading 100% completion with message "Success! App '563560' fully 
   * If any assertion failed or error found, start the following steps:
   *   1.close steamcmd, delete AlienSwarmRDServer folder and steamcmd folder,
   *   2.create AlienSwarmRDServer folder and unzip steamcmd.zip again, 
-  *   3.restart from step "Right click on the folder and select 'SVN Checkout'".
+  *   3.restart from step "Right click on the folder and select 'TortoiseGit > Clone'".
 
 * Type 'quit' to exit Steamcmd.
 
-Right click on the AlienSwarmRDServer folder and click "TortoiseSVN > Revert..."
+Double click on the AlienSwarmRDServer folder, right click on the 'server-rd' folder and click "TortoiseGit > Revert..."
 
-<a href=https://github.com/ch1ckenscoop/svn-rd/blob/master/wiki/InstallServer.wiki ><img src=svn_revert.png /></a>
+<a href=https://github.com/ch1ckenscoop/svn-rd/blob/master/wiki/InstallServer.wiki ><img src=git_revert.png /></a>
 
 Tick the box for "Select all" and click OK.
 
